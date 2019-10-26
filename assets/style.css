@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #fefdf3;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Vidaloka', serif;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header, main, section{
+    padding: 40px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 4rem;
+    margin: 15px;
+}
+
+header nav ul{
+    list-style: none;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+header nav ul li{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.microsite-separator-top{
+    margin-top: 70px;
+    border-top: 1px solid black;
+}
+
+.microsite-separator-bot {
+    border-top: 1px solid black;
+}
+
+header .microsite-latest-post{
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40% 40% 10%;
+    position: relative;
+}
+
+header .microsite-latest-post .microsite-latest-post_featured-img{
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    position: relative;
+    z-index: 1;
+}
+
+header .microsite-latest-post .microsite-latest-post_featured-img img {
+    width: 100%;
+    height: 575px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+header .microsite-latest-post .microsite-latest-post_featured-img_filter {
+   background-color: rgba(123, 93, 93, 0.5);
+   height: 99%;
+   position: absolute;
+   z-index: 2;
+   width: 100%;
+}
+
+header .microsite-latest-post .microsite-latest-post__title{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 3rem;
+    align-self: end;
+    z-index: 2;
+    position: relative;
+}
+
+header .microsite-latest-post .microsite-latest-post__excerpt {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+main h1, section h1{
+    padding: 15px 0;
+}
+
+section h1{
+    font-size: 30px;
+}
+
+main .microsite-posts-grid{
+    display: grid;
+    grid-template-columns: repeat(3, fit-content(25%));
+    padding: 30px 0;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_data .date{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6c6868;
+}
+
+main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_thumbnail{
+    position: relative;
+}
+
+main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_thumbnail img{
+    width: 100%;
+    height: 248px;
+    object-fit: cover;
+}
+
+main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_thumbnail .microsite-posts-grid_post_thumbnail_filter {
+    background-color: rgba(123, 93, 93, 0.5);
+    height: 98.5%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_data .author{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_content p{
+    font-weight: 300;
+}
+
+form{
+    padding: 30px 0;
+}
+
+#contacto form {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(30%));
+    grid-template-rows: 10% 20% 50% 20%;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+#contacto form p{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    font-weight: 300;
+}
+
+#contacto form .btn{
+    grid-row: 4;
+}
+
+label, input, textarea{
+    display: block;
+    font-weight: 300;
+}
+
+.btn{
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+    color: #fefdf3;
+    font-size: 1rem;
+    background-color: #6c6b62;
+    cursor: pointer;
+}
+
+input{
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+textarea{
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 100%;
+    height: 150px;
+}
+
+.form-group:nth-child(2n) {
+    grid-row: 2;
+    grid-column: 1 / span 1;
+}
+
+.form-group:nth-child(3n) {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.form-group:nth-child(4n) {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+footer{
+    background-color: #31302c;
+    color: #fefdf3;
+    padding: 50px 40px 3px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 40px 40px 0 40px;
+    line-height: 2rem;
+}
+
+.microsite-widget-developed-by{
+    grid-column: 1;
+    font-weight: 300;
+    color: gray;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width:1800px){
+    body {
+        margin: 0 10rem;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    main .microsite-posts-grid .microsite-posts-grid_post .microsite-posts-grid_post_data .author {
+        font-size: 1.1rem;
+    }
+    .btn {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (max-width:1024px){
+
+    main .microsite-posts-grid {
+        grid-template-columns: repeat(2, fit-content(40%));
+    }
+
+    .microsite-separator-top {
+        margin-top: 15px;
+    }
+
+    header>h1 {
+        line-height: 5rem;
+    }
+
+    header .microsite-latest-post .microsite-latest-post__title {
+        line-height: 3rem;
+    }
+    
+}
+
+@media all and (max-width:768px) {
+
+    main .microsite-posts-grid {
+        grid-template-columns: fit-content(65%);
+    }
+
+    header .microsite-latest-post .microsite-latest-post_featured-img img {
+        height: 375px;
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header .microsite-latest-post .microsite-latest-post__title {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 2rem;
+        align-self: end;
+        z-index: 2;
+    }
+
+    main{
+        padding: 20px 40px;
+    }
+
+    .btn {
+        margin: 0 25px;
+    }
+
+    #contacto form .btn {
+        grid-column: 1 / span 2;
+    }
+
+}
+
+@media all and (max-width:670px) {
+
+    main .microsite-posts-grid {
+        grid-template-columns: fit-content(80%);
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    #contacto form {
+        grid-template-columns: fit-content(60%);
+        grid-template-rows: 10% 15% 15% 40% 10%;
+    }
+
+    #contacto form p {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        font-weight: 300;
+    }
+
+    #contacto form .btn {
+        grid-row: 5;
+    }
+
+    .form-group:nth-child(2n) {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    .form-group:nth-child(3n) {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+
+    .form-group:nth-child(4n) {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+    }
+
+    header .microsite-latest-post {
+        grid-template-rows: 10% 40% 40% 10%;
+    }
+
+    header .microsite-latest-post .microsite-latest-post_featured-img {
+        overflow: hidden;
+    }
+
+    header .microsite-latest-post .microsite-latest-post_featured-img_filter {
+        height: 100%;
+    }
+
+    form{
+        margin: 0 25px;
+    }
+
+}
+
+@media all and (max-width:435px){
+    header, main, section {
+    padding: 15px;
+}
+    footer h1{
+        line-height: 3rem;
+    }
+}
