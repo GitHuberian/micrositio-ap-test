@@ -47,7 +47,7 @@
             </div>
             <div class="microsite-posts-grid_post_content">
                 <h3><?php the_title(); ?></h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p><?php echo get_excerpt(); ?></p>
             </div>
         </article>
         <?php endwhile; ?>
