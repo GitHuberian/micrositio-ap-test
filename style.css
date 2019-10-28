@@ -80,7 +80,7 @@ header nav ul li {
     border-top: 1px solid black;
 }
 
-header .microsite-latest-post {
+header .microsite {
     padding: 15px 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -88,14 +88,14 @@ header .microsite-latest-post {
     position: relative;
 }
 
-header .microsite-latest-post .microsite-latest-post_featured-img {
+header .microsite .microsite_featured-img {
     grid-column: 1;
     grid-row: 1 / span 4;
     position: relative;
     z-index: 1;
 }
 
-header .microsite-latest-post .microsite-latest-post_featured-img img {
+header .microsite .microsite_featured-img img {
     width: 100%;
     height: 575px;
     object-fit: cover;
@@ -103,7 +103,7 @@ header .microsite-latest-post .microsite-latest-post_featured-img img {
     z-index: 1;
 }
 
-header .microsite-latest-post .microsite-latest-post_featured-img_filter {
+header .microsite .microsite_featured-img_filter {
     background-color: rgba(123, 93, 93, 0.5);
     height: 99%;
     position: absolute;
@@ -111,7 +111,7 @@ header .microsite-latest-post .microsite-latest-post_featured-img_filter {
     width: 100%;
 }
 
-header .microsite-latest-post .microsite-latest-post__title {
+header .microsite .microsite__title {
     grid-column: 1;
     grid-row: 2;
     font-size: 3rem;
@@ -120,7 +120,7 @@ header .microsite-latest-post .microsite-latest-post__title {
     position: relative;
 }
 
-header .microsite-latest-post .microsite-latest-post__excerpt {
+header .microsite .microsite__description {
     grid-column: 1;
     grid-row: 3;
     text-align: center;
@@ -297,7 +297,7 @@ footer {
         line-height: 5rem;
     }
 
-    header .microsite-latest-post .microsite-latest-post__title {
+    header .microsite .microsite__title {
         line-height: 3rem;
     }
 
@@ -309,7 +309,7 @@ footer {
         grid-template-columns: fit-content(65%);
     }
 
-    header .microsite-latest-post .microsite-latest-post_featured-img img {
+    header .microsite .microsite_featured-img img {
         height: 375px;
     }
 
@@ -317,7 +317,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    header .microsite-latest-post .microsite-latest-post__title {
+    header .microsite .microsite__title {
         grid-column: 1;
         grid-row: 2;
         font-size: 2rem;
@@ -379,15 +379,15 @@ footer {
         grid-column: 1 / span 2;
     }
 
-    header .microsite-latest-post {
+    header .microsite {
         grid-template-rows: 10% 40% 40% 10%;
     }
 
-    header .microsite-latest-post .microsite-latest-post_featured-img {
+    header .microsite .microsite_featured-img {
         overflow: hidden;
     }
 
-    header .microsite-latest-post .microsite-latest-post_featured-img_filter {
+    header .microsite .microsite_featured-img_filter {
         height: 100%;
     }
 
