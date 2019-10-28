@@ -10,7 +10,33 @@
     }
     ?>
     <div class="microsite-separator-bot"></div>
-
+    <div class="breadcrumb"><?php get_breadcrumb(); ?></div>
+    <div class="microsite-post-full-content">
+        <?php
+        if (have_posts()) :
+        while (have_posts()) :
+            the_post();
+        ?>
+                <div class="microsite">
+                    <div class="microsite_featured-img">
+                        <div class="microsite_featured-img_filter"></div>
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </div>
+                <h2><?php the_title(); ?></h2>
+                <div class="microsite-single-content">
+                    <?php the_content(); ?>
+                </div>
+        <?php
+        endwhile;
+        endif;
+        ?>
+    </div>
+    <div class="microsite-separator-bot"></div>
+    <div>
+        <p class="postmetadata">
+        Ver en: <?php the_category(', ') ?> 
+    </div>
 
 </main>
 <section id="contacto">
