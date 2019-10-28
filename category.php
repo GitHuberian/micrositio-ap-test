@@ -23,7 +23,7 @@
                     <?php endif; ?>
                 </div>
                 <div class="microsite-posts-grid_post_data">
-                    <p class="date"><?php the_date(); ?></p>
+                    <p class="date"><?php echo get_the_date(); ?></p>
                     <p class="author"><span>Por</span> <?php the_author(); ?></p>
                 </div>
                 <div class="microsite-posts-grid_post_content">

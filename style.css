@@ -42,6 +42,14 @@ a {
     text-decoration: none;
 }
 
+a:link {
+    color: initial;
+}
+
+a:visited {
+    color: initial;
+}
+
 header,
 main,
 section {
@@ -126,6 +134,20 @@ header .microsite .microsite__description {
     text-align: center;
     z-index: 2;
     position: relative;
+}
+
+nav {
+    text-align: center;
+}
+
+nav .icon {
+    display: none;
+}
+
+.responsive-menu {
+    float: none;
+    display: block !important;
+    text-align: center;
 }
 
 main h1,
@@ -375,6 +397,14 @@ footer {
 
     #contacto form .btn {
         grid-column: 1 / span 2;
+    }
+
+    nav a.icon {
+        display: block;
+    }
+
+    nav.microsite-nav ul {
+        display: none;
     }
 
 }
